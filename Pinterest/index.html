@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" href="css/login.css">
+<style>
+
+
+
+body {
+ background: url(camera.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+  overflow-x: hidden;
+}
+
+fieldset{
+width:12%;
+border: 1px 
+padding: 0.6em;
+}
+
+.lower-right-button{
+    position:absolute;
+    bottom: 24em;
+    left: 14em;
+	}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(font/v.ttf);
+}	
+h2{
+font-size:350%;
+position:absolute;
+left: 4em;
+top:1em;
+color:#ffffff;	
+font-family: myFirstFont;
+}
+
+.btn { 
+  color:#2f4f4f; 
+  font: bold 84% myFirstFont,'trebuchet ms',helvetica,sans-serif; 
+  background-color:#fed; 
+  border:1px solid; 
+  border-color: #696 #363 #363 #696; 
+} 
+</style>
+</head>
+
+<body>
+<!--
+<div align="center">
+<img src="large.gif" width="500" height="200" align="center" alt="Pinterest.jpg" >
+</div>
+-->
+<h2><em>Poloroid<em></h2>
+
+<form id="login" action="login.php" method="POST" align="center" "position: absolute">
+	<fieldset id="inputs" class="lower-right-button">
+	<legend><h3>Login/SignUp</h3></legend>
+        <input id="username" type="text" name="email" placeholder="Username"  autofocus required>
+		<br>
+        <input id="password" type="password"  name="password" placeholder="Password" autofocus required>
+		<br>
+		<input class="btn" type="submit" id="submit" name="submit" value="Login">
+        <input class="btn" type="button" onClick="location.href='demo.php'" value='Signup'>	
+    </fieldset>        
+</form>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<style>
+body {background-color:lightgrey}
+
+</style>
+
+<body>
+<h2 style="font-size:100%">Create A board</h2>
+</head>
+<body>
+
+	<form action="createboard.php"  name="createboard" method="POST" >
+
+		<fieldset id="inputs">
+			 Board Name:<br><input type="name" placeholder="Board Name" name="bname"  /><br>
+			 
+			 Board Description:<br>	<textarea name="tag" placeholder="Board Description" rows="10" cols="50"></textarea><br>
+			 
+  			 Board Type:<br><input type="name" placeholder="type" name="type" /><br>
+			 
+			 Do you want to keep board secret?<br>
+                <input type="radio" name="secret" value="Y" /> Yes
+                <input type="radio" name="secret" value="N" /> No
+		</fieldset>
+		<fieldset id="actions">	
+			<input type="submit" id="submit" value="Submit" name="submit" />
+		</fieldset>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+body {
+ background: url(camera.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+  overflow-x: hidden;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(font/v.ttf);
+}
+h1{
+	font-family: myFirstFont;
+}
+button{
+	font-family: myFirstFont;
+}
